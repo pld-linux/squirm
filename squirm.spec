@@ -43,8 +43,8 @@ Ma nastêpuj±ce mo¿liwo¶ci:
 - interaktywny tryb testowy do sprawdzania nowych konfiguracji
 - pe³ne dopasowywanie i podstawianie z u¿yciem wyra¿eñ regularnych
 - pliki konfiguracyjne dla wzorców i adresów IP
-- przy zepsutym pliku konfiguracyjnym Squirm dzia³a w trybie Dodo,
-  a Squid dzia³a nadal.
+- przy zepsutym pliku konfiguracyjnym Squirm dzia³a w trybie Dodo, a
+  Squid dzia³a nadal.
 
 %prep
 %setup -q
