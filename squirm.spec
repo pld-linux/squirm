@@ -36,7 +36,7 @@ Squirm has the following features:
 %setup -q
 %patch0 -p1
 %build
-%{__make} CFLAGS="%{rpmcflags} -funroll-loops -DPREFIX=\\\"/var/log/squid\\\"" 
+%{__make} CFLAGS="%{rpmcflags} -funroll-loops -DPREFIX=\\\"/\\\""
 
 %install
 rm -rf $RPM_BUILD_ROOT
