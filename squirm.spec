@@ -2,15 +2,15 @@ Summary:	Squirm - A Squid Web Cache Redirector
 Name:		squirm
 Version:	1.23
 Release:	1
-Source0:	http://squirm.foote.com.au/%{name}-%{version}.tgz
-Patch0:		%{name}-Makefile-paths.patch
 License:	GPL
-URL:		http://squirm.foote.com.au/
 Group:		Networking/Daemons
 Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Source0:	http://squirm.foote.com.au/%{name}-%{version}.tgz
+Patch0:		%{name}-Makefile-paths.patch
+URL:		http://squirm.foote.com.au/
 Requires:	squid
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir /etc/squid
 
@@ -35,12 +35,15 @@ Squirm has the following features:
 %prep
 %setup -q
 %patch0 -p1
+
 %build
 %{__make} CFLAGS="%{rpmcflags} -funroll-loops -DPREFIX=\\\"/\\\""
 
-%install
+%clean
 rm -rf $RPM_BUILD_ROOT
 
+%install
+rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}}
 
 install squirm			$RPM_BUILD_ROOT%{_bindir}
@@ -50,10 +53,7 @@ install	squirm.patterns.dist	$RPM_BUILD_ROOT%{_sysconfdir}/squirm.patterns
 gzip -9nf README
 
 %files
-%doc *.gz
 %defattr(644,root,root,755)
+%doc *.gz
 %attr(755,root,root) %{_bindir}/*
 %attr(640,root,squid) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
