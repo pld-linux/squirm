@@ -64,10 +64,9 @@ install squirm			$RPM_BUILD_ROOT%{_bindir}
 install	squirm.conf.dist	$RPM_BUILD_ROOT%{_sysconfdir}/squirm.conf
 install	squirm.patterns.dist	$RPM_BUILD_ROOT%{_sysconfdir}/squirm.patterns
 
-gzip -9nf README
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %attr(640,root,squid) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/*
