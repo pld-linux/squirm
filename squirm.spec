@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://squirm.foote.com.au/%{name}-%{version}.tgz
+# Source0-md5:	aedcaab22ca3ae0c8440bd0ef9d6e75e
 Patch0:		%{name}-Makefile-paths.patch
 URL:		http://squirm.foote.com.au/
 Requires:	squid
