@@ -5,8 +5,6 @@ Version:	1.23
 Release:	2
 License:	GPL
 Group:		Networking/Daemons
-Group(de):	Netzwerkwesen/Server
-Group(pl):	Sieciowe/Serwery
 Source0:	http://squirm.foote.com.au/%{name}-%{version}.tgz
 Patch0:		%{name}-Makefile-paths.patch
 URL:		http://squirm.foote.com.au/
