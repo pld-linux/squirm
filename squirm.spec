@@ -1,7 +1,8 @@
 Summary:	Squirm - A Squid Web Cache Redirector
+Summary(pl):	Squirm - przekierowywacz dla Squida
 Name:		squirm
 Version:	1.23
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Daemons
 Group(de):	Netzwerkwesen/Server
@@ -21,7 +22,6 @@ Squirm source), and of course, a working Squid. It is available free
 under the terms of the GNU GPL.
 
 Squirm has the following features:
-
 - Very, very fast
 - Virtually no memory usage
 - It can re-read it's config files while running by sending it a HUP
@@ -31,6 +31,22 @@ Squirm has the following features:
 - Config files for patterns and IP addresses.
 - If you mess up the config file, Squirm runs in Dodo Mode so your
   squid keeps working :-)
+
+%description -l pl
+Squirm jest szybkim i konfigurowalnym narzêdziem do przekierowywania
+dla Squida (serwera proxy-cache). Wymaga biblioteki GNU Regex
+(do³±czonej do ¼róde³) oraz oczywi¶cie dzia³aj±cego Squida.
+
+Ma nastêpuj±ce mo¿liwo¶ci:
+- bardzo du¿a szybko¶æ
+- prawie zerowe zu¿ycie pamiêci
+- mo¿liwo¶æ ponownego przeczytania konfiguracji w trakcie dzia³ania
+  przez wys³anie SIGHUP
+- interaktywny tryb testowy do sprawdzania nowych konfiguracji
+- pe³ne dopasowywanie i podstawianie z u¿yciem wyra¿eñ regularnych
+- pliki konfiguracyjne dla wzorców i adresów IP
+- przy zepsutym pliku konfiguracyjnym Squirm dzia³a w trybie Dodo,
+  a Squid dzia³a nadal.
 
 %prep
 %setup -q
