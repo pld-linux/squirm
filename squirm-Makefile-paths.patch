@@ -32,15 +32,15 @@ diff -ruN squirm-1.23.orig/paths.h squirm-1.23/paths.h
 -#define LOG_WHERE PREFIX"/logs/squirm.where"
 -#define LOG_DEBUG PREFIX"/logs/squirm.debug"
 -#define LOG_INFO PREFIX"/logs/squirm.info"
-+#define LOG_MATCH PREFIX"/squirm.match"
-+#define LOG_FAIL  PREFIX"/squirm.fail"
-+#define LOG_ERROR PREFIX"/squirm.error"
-+#define LOG_WHERE PREFIX"/squirm.where"
-+#define LOG_DEBUG PREFIX"/squirm.debug"
-+#define LOG_INFO PREFIX"/squirm.info"
++#define LOG_MATCH PREFIX"/var/log/squid/squirm.match"
++#define LOG_FAIL  PREFIX"/var/log/squid/squirm.fail"
++#define LOG_ERROR PREFIX"/var/log/squid/squirm.error"
++#define LOG_WHERE PREFIX"/var/log/squid/squirm.where"
++#define LOG_DEBUG PREFIX"/var/log/squid/squirm.debug"
++#define LOG_INFO PREFIX"/var/log/squid/squirm.info"
  
  /*************  Configuration file locations  ***********/
 -#define SQUIRM_CONF PREFIX"/etc/squirm.conf"
-+#define SQUIRM_CONF "/etc/squid/squirm.conf"
++#define SQUIRM_CONF PREFIX"/etc/squid/squirm.conf"
  
  #endif
