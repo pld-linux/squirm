@@ -1,0 +1,46 @@
+diff -ruN squirm-1.23.orig/Makefile squirm-1.23/Makefile
+--- squirm-1.23.orig/Makefile	Fri Mar 31 07:07:54 2000
++++ squirm-1.23/Makefile	Fri Jul 27 18:14:44 2001
+@@ -17,7 +17,7 @@
+ ROOT_GROUP = bin
+ 
+ # The regex library (-lgnuregex is common on FreeBSD, none for some Linux'es)
+-EXTRALIBS=-lgnuregex
++#EXTRALIBS=-lgnuregex
+ 
+ 
+ 
+@@ -32,7 +32,7 @@
+ CC=gcc
+ 
+ 
+-OPTIMISATION=-O3
++#OPTIMISATION=-O3
+ BINARIES = squirm
+ 
+ CFLAGS = -O3 -Wall -funroll-loops -DPREFIX=\"$(PREFIX)\"
+diff -ruN squirm-1.23.orig/paths.h squirm-1.23/paths.h
+--- squirm-1.23.orig/paths.h	Fri Mar 31 07:08:43 2000
++++ squirm-1.23/paths.h	Fri Jul 27 18:15:42 2001
+@@ -17,14 +17,14 @@
+ 
+ /*************  Log File Locations (must be writable by **********/
+ /*************  the user given in the squid.conf file   **********/
+-#define LOG_MATCH PREFIX"/logs/squirm.match"
+-#define LOG_FAIL  PREFIX"/logs/squirm.fail"
+-#define LOG_ERROR PREFIX"/logs/squirm.error"
+-#define LOG_WHERE PREFIX"/logs/squirm.where"
+-#define LOG_DEBUG PREFIX"/logs/squirm.debug"
+-#define LOG_INFO PREFIX"/logs/squirm.info"
++#define LOG_MATCH PREFIX"/squirm.match"
++#define LOG_FAIL  PREFIX"/squirm.fail"
++#define LOG_ERROR PREFIX"/squirm.error"
++#define LOG_WHERE PREFIX"/squirm.where"
++#define LOG_DEBUG PREFIX"/squirm.debug"
++#define LOG_INFO PREFIX"/squirm.info"
+ 
+ /*************  Configuration file locations  ***********/
+-#define SQUIRM_CONF PREFIX"/etc/squirm.conf"
++#define SQUIRM_CONF "/etc/squid/squirm.conf"
+ 
+ #endif
