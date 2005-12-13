@@ -70,4 +70,4 @@ install	squirm.patterns.dist	$RPM_BUILD_ROOT%{_sysconfdir}/squirm.patterns
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/*
-%attr(640,root,squid) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/*
+%attr(640,root,squid) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
