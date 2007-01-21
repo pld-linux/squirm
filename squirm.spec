@@ -52,7 +52,9 @@ Ma nastêpuj±ce mo¿liwo¶ci:
 %patch0 -p1
 
 %build
-%{__make} CFLAGS="%{rpmcflags} -funroll-loops -DPREFIX=\\\"/\\\""
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -funroll-loops -DPREFIX=\\\"/\\\""
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -68,6 +70,6 @@ install	squirm.patterns.dist	$RPM_BUILD_ROOT%{_sysconfdir}/squirm.patterns
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc CREDITS README
 %attr(755,root,root) %{_bindir}/*
 %attr(640,root,squid) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
