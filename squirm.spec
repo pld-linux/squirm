@@ -1,5 +1,5 @@
 Summary:	Squirm - A Squid Web Cache Redirector
-Summary(pl.UTF-8):   Squirm - przekierowywacz dla Squida
+Summary(pl.UTF-8):	Squirm - przekierowywacz dla Squida
 Name:		squirm
 Version:	1.23
 Release:	3
