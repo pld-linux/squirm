@@ -1,5 +1,5 @@
 Summary:	Squirm - A Squid Web Cache Redirector
-Summary(pl):	Squirm - przekierowywacz dla Squida
+Summary(pl.UTF-8):   Squirm - przekierowywacz dla Squida
 Name:		squirm
 Version:	1.23
 Release:	3
@@ -31,21 +31,21 @@ Squirm has the following features:
 - If you mess up the config file, Squirm runs in Dodo Mode so your
   squid keeps working :-)
 
-%description -l pl
-Squirm jest szybkim i konfigurowalnym narzÍdziem do przekierowywania
+%description -l pl.UTF-8
+Squirm jest szybkim i konfigurowalnym narzƒôdziem do przekierowywania
 dla Squida (serwera proxy-cache). Wymaga biblioteki GNU Regex
-(do≥±czonej do ºrÛde≥) oraz oczywi∂cie dzia≥aj±cego Squida.
+(do≈ÇƒÖczonej do ≈∫r√≥de≈Ç) oraz oczywi≈õcie dzia≈ÇajƒÖcego Squida.
 
-Ma nastÍpuj±ce moøliwo∂ci:
-- bardzo duøa szybko∂Ê
-- prawie zerowe zuøycie pamiÍci
-- moøliwo∂Ê ponownego przeczytania konfiguracji w trakcie dzia≥ania
-  przez wys≥anie SIGHUP
+Ma nastƒôpujƒÖce mo≈ºliwo≈õci:
+- bardzo du≈ºa szybko≈õƒá
+- prawie zerowe zu≈ºycie pamiƒôci
+- mo≈ºliwo≈õƒá ponownego przeczytania konfiguracji w trakcie dzia≈Çania
+  przez wys≈Çanie SIGHUP
 - interaktywny tryb testowy do sprawdzania nowych konfiguracji
-- pe≥ne dopasowywanie i podstawianie z uøyciem wyraøeÒ regularnych
-- pliki konfiguracyjne dla wzorcÛw i adresÛw IP
-- przy zepsutym pliku konfiguracyjnym Squirm dzia≥a w trybie Dodo, a
-  Squid dzia≥a nadal.
+- pe≈Çne dopasowywanie i podstawianie z u≈ºyciem wyra≈ºe≈Ñ regularnych
+- pliki konfiguracyjne dla wzorc√≥w i adres√≥w IP
+- przy zepsutym pliku konfiguracyjnym Squirm dzia≈Ça w trybie Dodo, a
+  Squid dzia≈Ça nadal.
 
 %prep
 %setup -q
