@@ -1,12 +1,12 @@
 Summary:	Squirm - A Squid Web Cache Redirector
 Summary(pl.UTF-8):	Squirm - przekierowywacz dla Squida
 Name:		squirm
-Version:	1.23
-Release:	3
+Version:	1.26
+Release:	1
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://squirm.foote.com.au/%{name}-%{version}.tgz
-# Source0-md5:	aedcaab22ca3ae0c8440bd0ef9d6e75e
+# Source0-md5:	54ac1d208620ec1e4419f97315d38848
 Patch0:		%{name}-Makefile-paths.patch
 URL:		http://squirm.foote.com.au/
 Requires:	squid
