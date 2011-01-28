@@ -56,9 +56,6 @@ Ma następujące możliwości:
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -funroll-loops -DPREFIX=\\\"/\\\""
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}}
@@ -67,6 +64,8 @@ install squirm			$RPM_BUILD_ROOT%{_bindir}
 install	squirm.conf.dist	$RPM_BUILD_ROOT%{_sysconfdir}/squirm.conf
 install	squirm.patterns.dist	$RPM_BUILD_ROOT%{_sysconfdir}/squirm.patterns
 
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
